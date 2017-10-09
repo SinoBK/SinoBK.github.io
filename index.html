@@ -1,37 +1,67 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html>  
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+      
+    <!--  Dokumentkompatibilitätsmodus für IE-->  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/favicon.ico">
 
-<head>
-    <meta charset="UTF-8" />
-    <title>Titel der Webseite</title>
+    <title>Meine erste eigene Website</title>
 
-    <link href="Hintergrund.css"
-    type="text/css" rel="stylesheet"
-    /> 
-</head>
+    <!-- Bootstrap Haupt-CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
 
-    
-<body>
-    <h1>Überschrift</h1>
-    <p>Inhalt der Webseite</p>
-    <p>runter <sub>gelegt</sub></p>
-    <p>hoch <sup>gelegt</sup></p>
-    <p><strong>Dick</strong></p>
-    <p><em>kusiv</em></p>
-    <a href="index2.html">League of Legends</a>
-    <ul>
-        <li>Liste</li>
-        <li>Liste</li>
-    </ul>
-    <ol>
-        <li>sortirte liste</li>
-        <li>sortirte liste</li>
-    </ol>
-    
-    
-    
-    
-    
-</body>
-    
-</html>
+    <!-- Bootstrap Theme-CSS -->
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+      
+    <!-- Eigenes CSS -->  
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <!-- screen reader haben Probleme, wenn nicht jede Eingabe ein Label hat -->
+            <span class="sr-only">Navigation ein/ausblenden</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Mein Blog</a>
+        </div>
+          
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Startseite</a></li>
+            <li><a href="ueber-mich.html">Über mich</a></li>
+            <li><a href="Links.html">Links</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="inhalt">
+        <h1>Meine Überschrift</h1>
+        <p class="lead">Hier kommen dann alle Inhalte der Blog-Startseite hinein.</p>
+      </div>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap Haupt-JavaScript -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>     
